@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: #ff6b6b;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover Effects */
+.button1:hover {
+    background: #feca57;
+}
+
+.button2 {
+    background: #48dbfb;
+}
+
+.button2:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-45deg);
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+.button2:hover::before {
+    left: 100%;
+}
+
+.button3 {
+    background: #1dd1a1;
+    border: 2px solid transparent;
+}
+
+.button3:hover {
+    border: 2px solid #fff;
+    background: transparent;
+    color: #1dd1a1;
+}
+
+.button4 {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+}
+
+.button4:hover {
+    background: linear-gradient(45deg, #48dbfb, #1dd1a1);
+}
+
+.button5 {
+    background: #ff9ff3;
+    text-transform: uppercase;
+}
+
+.button5:hover {
+    letter-spacing: 2px;
+    background: #ff6b81;
+}
+
+.button6 {
+    background: #576574;
+    color: #fff;
+    position: relative;
+}
+
+.button6:hover {
+    color: #000;
+    background: #ced6e0;
+    transform: rotate(3deg);
+}
+
+.button7 {
+    background: #3c40c6;
+    box-shadow: 0 4px #575fcf;
+    text-shadow: 1px 1px #2c2c54;
+}
+
+.button7:hover {
+    box-shadow: 0 10px #575fcf;
+    transform: translateY(-5px);
+}
+
+.button8 {
+    background: transparent;
+    border: 2px solid #ff6b6b;
+    color: #ff6b6b;
+}
+
+.button8:hover {
+    background: #ff6b6b;
+    color: #fff;
+}
