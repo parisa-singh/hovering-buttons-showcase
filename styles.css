@@ -112,13 +112,13 @@ h1 {
 
 .button7 {
     background: #3c40c6;
-    box-shadow: 0 4px #575fcf;
+    box-shadow: 0 10px #575fcf;
     text-shadow: 1px 1px #2c2c54;
 }
 
 .button7:hover {
-    box-shadow: 0 10px #575fcf;
-    transform: translateY(-5px);
+    box-shadow: 0 4px #575fcf;
+    transform: translateY(5px);
 }
 
 .button8 {
